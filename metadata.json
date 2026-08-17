@@ -1,0 +1,6 @@
+{
+  "name": "ToolVerse",
+  "description": "All-in-one database-driven utility platform with AI tools, developer tools, writing tools, image & PDF tools, dynamic blog, SEO, and full admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
