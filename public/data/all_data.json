@@ -1,0 +1,2412 @@
+{
+  "meta": {
+    "name": "ToolVerse",
+    "version": "1.0.0",
+    "description": "Precision Online Tools for Everyday Life",
+    "generatedAt": "2026-08-18T11:05:22.287Z",
+    "totalCategories": 12,
+    "totalTools": 86,
+    "totalBlogs": 12
+  },
+  "categories": [
+    {
+      "id": "calculators",
+      "name": "Calculators",
+      "slug": "calculators",
+      "description": "Everyday math, age, discount, tip, percentage, and date calculators with instant accurate results.",
+      "iconName": "Calculator",
+      "color": "from-amber-500/20 to-yellow-600/20 text-amber-500"
+    },
+    {
+      "id": "converters",
+      "name": "Converters",
+      "slug": "converters",
+      "description": "Comprehensive unit converters for length, weight, temperature, currency, area, volume, and data.",
+      "iconName": "ArrowLeftRight",
+      "color": "from-blue-500/20 to-indigo-600/20 text-blue-400"
+    },
+    {
+      "id": "text-tools",
+      "name": "Text Tools",
+      "slug": "text-tools",
+      "description": "Transform, analyze, count, format, deduplicate, and clean up your text effortlessly.",
+      "iconName": "Type",
+      "color": "from-emerald-500/20 to-teal-600/20 text-emerald-400"
+    },
+    {
+      "id": "image-tools",
+      "name": "Image Tools",
+      "slug": "image-tools",
+      "description": "Client-side image compression, resizing, cropping, and format conversion with zero upload latency.",
+      "iconName": "Image",
+      "color": "from-purple-500/20 to-pink-600/20 text-purple-400"
+    },
+    {
+      "id": "developer-tools",
+      "name": "Developer Tools",
+      "slug": "developer-tools",
+      "description": "Fast JSON formatters, Base64 converters, UUID generators, hashers, and web encoding utilities.",
+      "iconName": "Code2",
+      "color": "from-cyan-500/20 to-blue-600/20 text-cyan-400"
+    },
+    {
+      "id": "seo-tools",
+      "name": "SEO Tools",
+      "slug": "seo-tools",
+      "description": "Generate meta tags, robots.txt, sitemaps, Open Graph cards, SERP previews, and check keyword density.",
+      "iconName": "SearchCheck",
+      "color": "from-orange-500/20 to-amber-600/20 text-orange-400"
+    },
+    {
+      "id": "finance-tools",
+      "name": "Finance Tools",
+      "slug": "finance-tools",
+      "description": "Mortgage, loan, compound interest, salary, profit margin, and investment growth estimators.",
+      "iconName": "Coins",
+      "color": "from-yellow-500/20 to-amber-600/20 text-yellow-500"
+    },
+    {
+      "id": "date-time",
+      "name": "Date & Time Tools",
+      "slug": "date-time",
+      "description": "Time difference, date arithmetic, workday counters, and multi-timezone schedulers.",
+      "iconName": "CalendarClock",
+      "color": "from-sky-500/20 to-indigo-600/20 text-sky-400"
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity Tools",
+      "slug": "productivity",
+      "description": "Pomodoro focus timer, stopwatch, habit tracker, random decision maker, and quick scratchpad.",
+      "iconName": "Flame",
+      "color": "from-rose-500/20 to-red-600/20 text-rose-400"
+    },
+    {
+      "id": "health",
+      "name": "Health & Fitness",
+      "slug": "health",
+      "description": "BMI, BMR, TDEE, calorie target, ideal weight, body fat, and running pace calculators.",
+      "iconName": "HeartPulse",
+      "color": "from-green-500/20 to-emerald-600/20 text-green-400"
+    },
+    {
+      "id": "generators",
+      "name": "Generators",
+      "slug": "generators",
+      "description": "High-entropy password, QR code, random name, color palette, and CSS gradient generators.",
+      "iconName": "Sparkles",
+      "color": "from-violet-500/20 to-indigo-600/20 text-violet-400"
+    },
+    {
+      "id": "file-tools",
+      "name": "File Tools",
+      "slug": "file-tools",
+      "description": "Client-side file size converters, text file merge/splitter, and CSV-to-JSON format tools.",
+      "iconName": "Files",
+      "color": "from-slate-500/20 to-zinc-600/20 text-slate-400"
+    }
+  ],
+  "tools": [
+    {
+      "id": "age-calculator",
+      "name": "Age Calculator",
+      "slug": "age-calculator",
+      "category": "calculators",
+      "description": "Calculate your exact age in years, months, days, hours, and minutes with next birthday countdown.",
+      "longDescription": "Our free Age Calculator precisely determines chronological age from a date of birth. View elapsed years, months, days, total hours, minutes, day of the week you were born, and countdown to your next birthday.",
+      "iconName": "Cake",
+      "keywords": [
+        "age calculator",
+        "calculate age",
+        "date of birth calculator",
+        "how old am i",
+        "exact age",
+        "next birthday countdown"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Select or type your Date of Birth in the date picker.",
+        "Optionally adjust the \"Calculate Age As Of\" date (defaults to today).",
+        "Optionally specify your exact birth time for precise hour/minute calculation.",
+        "Instant breakdown displays your exact age, total days lived, zodiac sign, and next birthday countdown."
+      ],
+      "howItWorks": "The tool calculates calendar date differences taking into account leap years, variable month days (28, 29, 30, 31), and exact timestamp offsets in your local browser timezone without sending any data to servers.",
+      "exampleScenario": {
+        "title": "Determining exact milestone age",
+        "description": "Born on May 14, 1995 calculating age on August 17, 2026",
+        "inputs": {
+          "Date of Birth": "May 14, 1995",
+          "Current Date": "Aug 17, 2026"
+        },
+        "result": "31 Years, 3 Months, 3 Days (Total 11,418 days lived, Next birthday in 270 days)"
+      },
+      "faqs": [
+        {
+          "question": "How is exact age calculated with leap years?",
+          "answer": "Our algorithm accounts for every leap year (366 days) in the elapsed timeframe, calculating full calendar year intervals first, followed by remaining complete months, and lastly residual calendar days."
+        },
+        {
+          "question": "Does this tool store my date of birth?",
+          "answer": "No. All calculations are executed 100% locally in your browser using JavaScript client-side processing. Zero personal data is transmitted or saved."
+        },
+        {
+          "question": "Can I calculate my age at a future or past date?",
+          "answer": "Yes! Simply change the \"Calculate Age As Of\" selector to any historical or future date to determine milestone ages for retirement, graduations, or visa applications."
+        },
+        {
+          "question": "How does the next birthday countdown work?",
+          "answer": "It calculates the exact calendar day of your upcoming birthday in the current or subsequent year and computes the exact days, hours, and weekday remaining."
+        }
+      ],
+      "relatedToolIds": [
+        "date-calculator",
+        "time-calculator",
+        "percentage-calculator"
+      ]
+    },
+    {
+      "id": "percentage-calculator",
+      "name": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "category": "calculators",
+      "description": "Calculate percentages, percentage increase or decrease, find X% of Y, and find base values instantly.",
+      "longDescription": "An all-in-one percentage calculation suite solving every common percentage problem: finding what X% of Y is, determining what percent X is of Y, calculating percentage increase/decrease, and margin/markup conversions.",
+      "iconName": "Percent",
+      "keywords": [
+        "percentage calculator",
+        "percent increase",
+        "percent decrease",
+        "what percent of",
+        "percent change formula"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Choose your calculation mode (e.g. \"What is X% of Y?\", \"X is what % of Y?\", or \"Percentage Change\").",
+        "Enter the numeric values in the provided fields.",
+        "View the real-time calculated result, mathematical formula, and step-by-step breakdown."
+      ],
+      "howItWorks": "Utilizes standard algebraic formulas: Percentage = (Part / Whole) × 100, and Percentage Change = ((New Value - Old Value) / |Old Value|) × 100.",
+      "exampleScenario": {
+        "title": "Calculating Year-over-Year Revenue Growth",
+        "description": "Revenue grew from $45,000 to $62,000",
+        "inputs": {
+          "Original Value": "45000",
+          "New Value": "62000"
+        },
+        "result": "+37.78% increase (+$17,000 net change)"
+      },
+      "faqs": [
+        {
+          "question": "How do you calculate percentage increase?",
+          "answer": "Subtract the original value from the new value, divide by the absolute original value, and multiply by 100."
+        },
+        {
+          "question": "What is the formula for finding X% of Y?",
+          "answer": "Multiply X by Y and divide by 100: (X × Y) / 100."
+        },
+        {
+          "question": "How do you reverse a percentage calculation?",
+          "answer": "To find the original price before a discount of D%, divide the discounted price by (1 - D/100)."
+        }
+      ],
+      "relatedToolIds": [
+        "discount-calculator",
+        "profit-margin-calculator",
+        "gst-calculator"
+      ]
+    },
+    {
+      "id": "bmi-calculator",
+      "name": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "category": "health",
+      "description": "Calculate your Body Mass Index (BMI), health category, and ideal healthy weight range in metric and imperial.",
+      "longDescription": "Calculates Body Mass Index (BMI) using WHO standard criteria. Provides visual health category indicators (Underweight, Normal, Overweight, Obese) and target healthy weight ranges based on height.",
+      "iconName": "HeartPulse",
+      "keywords": [
+        "bmi calculator",
+        "body mass index",
+        "calculate bmi",
+        "ideal weight",
+        "healthy weight range",
+        "bmi chart"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "health",
+      "howToSteps": [
+        "Select Metric (cm, kg) or Imperial (feet/inches, lbs) units.",
+        "Enter your height and weight.",
+        "Review your BMI score, category tier, and recommended healthy weight span."
+      ],
+      "howItWorks": "Metric formula: weight (kg) / [height (m)]². Imperial formula: 703 × weight (lbs) / [height (in)]².",
+      "exampleScenario": {
+        "title": "Checking adult fitness score",
+        "description": "Adult height 178 cm, weight 72 kg",
+        "inputs": {
+          "Height": "178 cm",
+          "Weight": "72 kg"
+        },
+        "result": "BMI 22.7 (Normal / Healthy Weight. Healthy range: 58.6 - 79.2 kg)"
+      },
+      "faqs": [
+        {
+          "question": "What is a normal BMI for adults?",
+          "answer": "According to the World Health Organization (WHO), a normal adult BMI falls between 18.5 and 24.9."
+        },
+        {
+          "question": "Does BMI distinguish muscle from fat?",
+          "answer": "No. BMI is a screening metric based on height and weight. Athletes with high muscle mass may test higher without having excess body fat."
+        },
+        {
+          "question": "Is this calculator a medical diagnosis?",
+          "answer": "No. This tool provides general estimates and should not replace clinical medical evaluation."
+        }
+      ],
+      "relatedToolIds": [
+        "bmr-calculator",
+        "tdee-calculator",
+        "ideal-weight-calculator"
+      ]
+    },
+    {
+      "id": "loan-calculator",
+      "name": "Loan Calculator",
+      "slug": "loan-calculator",
+      "category": "finance-tools",
+      "description": "Calculate monthly loan payments, total interest, and total repayment schedule for personal or auto loans.",
+      "longDescription": "Estimate your monthly installment (EMI), total interest charges, and comprehensive amortization overview for personal, auto, or home loans with interactive term sliders.",
+      "iconName": "Banknote",
+      "keywords": [
+        "loan calculator",
+        "emi calculator",
+        "monthly loan payment",
+        "auto loan calculator",
+        "personal loan",
+        "interest calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "financial",
+      "howToSteps": [
+        "Enter total loan principal amount.",
+        "Input the annual interest rate percentage (APR).",
+        "Select loan tenure in years or months.",
+        "Review monthly payment, total interest, and principal vs interest visual ratio."
+      ],
+      "howItWorks": "Uses the standard amortization formula: M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1], where P is Principal, i is monthly interest rate, and n is total months.",
+      "exampleScenario": {
+        "title": "Auto loan calculation",
+        "description": "$25,000 loan at 5.5% annual interest for 5 years (60 months)",
+        "inputs": {
+          "Principal": "$25,000",
+          "Interest": "5.5%",
+          "Term": "5 years"
+        },
+        "result": "$477.53 / month | Total Interest: $3,651.80 | Total Repaid: $28,651.80"
+      },
+      "faqs": [
+        {
+          "question": "How do extra payments lower total loan interest?",
+          "answer": "Making additional payments reduces the principal balance faster, resulting in less interest accruing over remaining billing periods."
+        },
+        {
+          "question": "What is the difference between APR and interest rate?",
+          "answer": "The interest rate represents the base borrowing cost, whereas APR includes additional lender fees and charges."
+        }
+      ],
+      "relatedToolIds": [
+        "mortgage-calculator",
+        "compound-interest-calculator",
+        "simple-interest-calculator"
+      ]
+    },
+    {
+      "id": "tip-calculator",
+      "name": "Tip Calculator",
+      "slug": "tip-calculator",
+      "category": "calculators",
+      "description": "Easily calculate gratuity tips, split bills among friends, and see total per person with custom tip percentages.",
+      "iconName": "Receipt",
+      "keywords": [
+        "tip calculator",
+        "gratuity calculator",
+        "split bill",
+        "restaurant tip calculator",
+        "bill splitter"
+      ],
+      "howToSteps": [
+        "Enter the total restaurant bill amount before tip.",
+        "Select standard tip percentages (10%, 15%, 18%, 20%, 25%) or enter a custom %.",
+        "Specify number of people splitting the bill.",
+        "View tip total, grand total, and individual person share."
+      ],
+      "faqs": [
+        {
+          "question": "What is standard tipping etiquette in the US?",
+          "answer": "Generally 15%–20% for standard to excellent table service, and 10%–15% for buffets or delivery."
+        },
+        {
+          "question": "Should tip be calculated before or after sales tax?",
+          "answer": "Standard etiquette recommends tipping on the pre-tax food and beverage subtotal."
+        }
+      ],
+      "relatedToolIds": [
+        "discount-calculator",
+        "gst-calculator",
+        "percentage-calculator"
+      ]
+    },
+    {
+      "id": "discount-calculator",
+      "name": "Discount Calculator",
+      "slug": "discount-calculator",
+      "category": "calculators",
+      "description": "Calculate sale savings, discounted price, additional coupon stacking, and tax on discounted items.",
+      "iconName": "Tag",
+      "keywords": [
+        "discount calculator",
+        "sale price calculator",
+        "percent off calculator",
+        "coupon discount",
+        "shopping savings"
+      ],
+      "howToSteps": [
+        "Enter the original list price.",
+        "Enter primary discount percentage.",
+        "Optionally enter an additional stacked coupon or promo code percentage.",
+        "Optionally add local sales tax rate to find final register price."
+      ],
+      "relatedToolIds": [
+        "percentage-calculator",
+        "gst-calculator",
+        "profit-margin-calculator"
+      ]
+    },
+    {
+      "id": "gst-calculator",
+      "name": "GST / VAT Calculator",
+      "slug": "gst-calculator",
+      "category": "finance-tools",
+      "description": "Calculate Goods & Services Tax (GST) or Value Added Tax (VAT) with Inclusive and Exclusive options.",
+      "iconName": "FileSpreadsheet",
+      "keywords": [
+        "gst calculator",
+        "vat calculator",
+        "sales tax calculator",
+        "tax inclusive",
+        "tax exclusive"
+      ],
+      "disclaimerType": "financial",
+      "howToSteps": [
+        "Enter your base amount.",
+        "Select standard GST/VAT rate (5%, 12%, 18%, 20%, 28%) or custom rate.",
+        "Choose \"GST Inclusive\" or \"GST Exclusive\" mode.",
+        "Get net amount, tax amount, and total gross value."
+      ],
+      "relatedToolIds": [
+        "tax-calculator",
+        "discount-calculator",
+        "salary-calculator"
+      ]
+    },
+    {
+      "id": "compound-interest-calculator",
+      "name": "Compound Interest Calculator",
+      "slug": "compound-interest-calculator",
+      "category": "finance-tools",
+      "description": "Simulate long-term wealth growth with recurring monthly contributions and flexible compounding frequencies.",
+      "iconName": "TrendingUp",
+      "keywords": [
+        "compound interest calculator",
+        "investment calculator",
+        "compound growth",
+        "future value",
+        "savings calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "financial",
+      "howToSteps": [
+        "Enter initial starting deposit.",
+        "Input monthly or annual recurring contribution.",
+        "Set expected annual interest rate (e.g. 7% for index funds).",
+        "Select compounding frequency (Daily, Monthly, Quarterly, Annually).",
+        "Choose investment horizon in years to see projected future portfolio balance."
+      ],
+      "relatedToolIds": [
+        "investment-calculator",
+        "simple-interest-calculator",
+        "loan-calculator"
+      ]
+    },
+    {
+      "id": "time-calculator",
+      "name": "Time Calculator",
+      "slug": "time-calculator",
+      "category": "date-time",
+      "description": "Add, subtract, and calculate duration differences between hours, minutes, and seconds.",
+      "iconName": "Clock",
+      "keywords": [
+        "time calculator",
+        "add hours minutes",
+        "time difference calculator",
+        "hours between times",
+        "duration calculator"
+      ],
+      "howToSteps": [
+        "Select mode: Add/Subtract times or Calculate Difference between Start & End times.",
+        "Enter hours, minutes, and seconds.",
+        "View total accumulated hours, minutes, decimal hours (for timesheets), and total seconds."
+      ],
+      "relatedToolIds": [
+        "date-calculator",
+        "meeting-time-calculator",
+        "stopwatch"
+      ]
+    },
+    {
+      "id": "date-calculator",
+      "name": "Date Calculator",
+      "slug": "date-calculator",
+      "category": "date-time",
+      "description": "Add or subtract days, weeks, months, and years from any date, or find total days between two dates.",
+      "iconName": "Calendar",
+      "keywords": [
+        "date calculator",
+        "days between dates",
+        "add days to date",
+        "business days calculator",
+        "date duration"
+      ],
+      "howToSteps": [
+        "Choose \"Days Between Two Dates\" or \"Add/Subtract from Date\".",
+        "Select start date and target end date.",
+        "Toggle option to include/exclude end date or calculate working business days (Mon-Fri)."
+      ],
+      "relatedToolIds": [
+        "age-calculator",
+        "time-calculator",
+        "countdown-timer"
+      ]
+    },
+    {
+      "id": "unit-converter",
+      "name": "Unit Converter",
+      "slug": "unit-converter",
+      "category": "converters",
+      "description": "Universal unit conversion tool for length, mass, temperature, area, volume, speed, pressure, and energy.",
+      "iconName": "ArrowLeftRight",
+      "keywords": [
+        "unit converter",
+        "convert units",
+        "metric to imperial",
+        "measurement converter",
+        "universal converter"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Select the measurement dimension (Length, Weight, Temp, Area, Volume, Speed, Data, Pressure).",
+        "Input the source value.",
+        "Choose your source unit and destination unit.",
+        "Get instant converted value with full precision and reference conversion factors."
+      ],
+      "relatedToolIds": [
+        "length-converter",
+        "weight-converter",
+        "temperature-converter"
+      ]
+    },
+    {
+      "id": "length-converter",
+      "name": "Length Converter",
+      "slug": "length-converter",
+      "category": "converters",
+      "description": "Convert between meters, kilometers, centimeters, millimeters, miles, yards, feet, inches, and nautical miles.",
+      "iconName": "Ruler",
+      "keywords": [
+        "length converter",
+        "meters to feet",
+        "inches to cm",
+        "miles to km",
+        "yards to meters"
+      ],
+      "relatedToolIds": [
+        "unit-converter",
+        "area-converter",
+        "speed-converter"
+      ]
+    },
+    {
+      "id": "weight-converter",
+      "name": "Weight Converter",
+      "slug": "weight-converter",
+      "category": "converters",
+      "description": "Convert kilograms, grams, milligrams, pounds, ounces, stones, and metric tons.",
+      "iconName": "Scale",
+      "keywords": [
+        "weight converter",
+        "kg to lbs",
+        "pounds to kg",
+        "grams to ounces",
+        "mass converter"
+      ],
+      "relatedToolIds": [
+        "unit-converter",
+        "bmi-calculator",
+        "ideal-weight-calculator"
+      ]
+    },
+    {
+      "id": "temperature-converter",
+      "name": "Temperature Converter",
+      "slug": "temperature-converter",
+      "category": "converters",
+      "description": "Convert temperatures between Celsius (°C), Fahrenheit (°F), Kelvin (K), and Rankine (°R) with step formulas.",
+      "iconName": "Thermometer",
+      "keywords": [
+        "temperature converter",
+        "celsius to fahrenheit",
+        "fahrenheit to celsius",
+        "kelvin converter"
+      ],
+      "relatedToolIds": [
+        "unit-converter",
+        "speed-converter"
+      ]
+    },
+    {
+      "id": "area-converter",
+      "name": "Area Converter",
+      "slug": "area-converter",
+      "category": "converters",
+      "description": "Convert square meters, square feet, acres, hectares, square kilometers, and square miles.",
+      "iconName": "Maximize2",
+      "keywords": [
+        "area converter",
+        "acres to sq ft",
+        "hectares to acres",
+        "sq meters to sq feet"
+      ],
+      "relatedToolIds": [
+        "length-converter",
+        "volume-converter"
+      ]
+    },
+    {
+      "id": "volume-converter",
+      "name": "Volume Converter",
+      "slug": "volume-converter",
+      "category": "converters",
+      "description": "Convert liters, milliliters, US gallons, fluid ounces, cups, pints, quarts, and cubic meters.",
+      "iconName": "Box",
+      "keywords": [
+        "volume converter",
+        "liters to gallons",
+        "gallons to liters",
+        "cups to ml",
+        "fluid ounces to ml"
+      ],
+      "relatedToolIds": [
+        "unit-converter",
+        "water-intake-calculator"
+      ]
+    },
+    {
+      "id": "speed-converter",
+      "name": "Speed Converter",
+      "slug": "speed-converter",
+      "category": "converters",
+      "description": "Convert between km/h, mph, m/s, knots, and feet per second.",
+      "iconName": "Gauge",
+      "keywords": [
+        "speed converter",
+        "kmh to mph",
+        "mph to kmh",
+        "knots to mph",
+        "pace converter"
+      ],
+      "relatedToolIds": [
+        "pace-calculator",
+        "unit-converter"
+      ]
+    },
+    {
+      "id": "data-storage-converter",
+      "name": "Data Storage Converter",
+      "slug": "data-storage-converter",
+      "category": "converters",
+      "description": "Convert digital storage sizes between Bits, Bytes, KB, MB, GB, TB, PB, KiB, MiB, and GiB.",
+      "iconName": "HardDrive",
+      "keywords": [
+        "data storage converter",
+        "mb to gb",
+        "gb to tb",
+        "bytes to kb",
+        "binary data converter"
+      ],
+      "relatedToolIds": [
+        "file-size-converter",
+        "unit-converter"
+      ]
+    },
+    {
+      "id": "time-zone-converter",
+      "name": "Time Zone Converter",
+      "slug": "time-zone-converter",
+      "category": "date-time",
+      "description": "Compare and convert times between world time zones (UTC, EST, PST, GMT, CET, IST, JST, AEST).",
+      "iconName": "Globe",
+      "keywords": [
+        "time zone converter",
+        "utc to est",
+        "world clock converter",
+        "gmt to ist",
+        "time difference world"
+      ],
+      "relatedToolIds": [
+        "meeting-time-calculator",
+        "time-calculator"
+      ]
+    },
+    {
+      "id": "currency-converter",
+      "name": "Currency Converter",
+      "slug": "currency-converter",
+      "category": "converters",
+      "description": "Convert world currencies (USD, EUR, GBP, JPY, CAD, AUD, CHF, INR, CNY, AED, SGD, BRL) with extensible rate feeds.",
+      "iconName": "Coins",
+      "keywords": [
+        "currency converter",
+        "usd to eur",
+        "gbp to usd",
+        "exchange rates",
+        "money converter"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "salary-calculator",
+        "gst-calculator",
+        "discount-calculator"
+      ]
+    },
+    {
+      "id": "word-counter",
+      "name": "Word Counter",
+      "slug": "word-counter",
+      "category": "text-tools",
+      "description": "Count words, characters, sentences, paragraphs, reading time, speaking time, and top keyword frequencies.",
+      "longDescription": "Comprehensive live text statistics analyzer. Instant count of words, characters with/without whitespace, sentences, paragraphs, estimated reading/speaking duration, and keyword density matrix.",
+      "iconName": "FileText",
+      "keywords": [
+        "word counter",
+        "character counter",
+        "word count tool",
+        "reading time calculator",
+        "text analyzer"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Type or paste your text into the editor.",
+        "Review instant stats: words, characters, sentences, paragraphs, and reading time.",
+        "Examine the top keyword frequency table to optimize content readability."
+      ],
+      "relatedToolIds": [
+        "character-counter",
+        "sentence-counter",
+        "case-converter"
+      ]
+    },
+    {
+      "id": "character-counter",
+      "name": "Character Counter",
+      "slug": "character-counter",
+      "category": "text-tools",
+      "description": "Count characters and monitor social media character limits (X/Twitter, Instagram, LinkedIn, SEO Title, Meta Desc).",
+      "iconName": "SpellCheck",
+      "keywords": [
+        "character counter",
+        "letter count",
+        "twitter character count",
+        "meta description length",
+        "sms length counter"
+      ],
+      "relatedToolIds": [
+        "word-counter",
+        "meta-description-generator"
+      ]
+    },
+    {
+      "id": "sentence-counter",
+      "name": "Sentence Counter",
+      "slug": "sentence-counter",
+      "category": "text-tools",
+      "description": "Count sentences, compute average words per sentence, and analyze text flow complexity.",
+      "iconName": "AlignLeft",
+      "keywords": [
+        "sentence counter",
+        "count sentences",
+        "readability analyzer",
+        "average sentence length"
+      ],
+      "relatedToolIds": [
+        "word-counter",
+        "lorem-ipsum-generator"
+      ]
+    },
+    {
+      "id": "case-converter",
+      "name": "Case Converter",
+      "slug": "case-converter",
+      "category": "text-tools",
+      "description": "Convert text to UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case, PascalCase, and Sentence case.",
+      "iconName": "Type",
+      "keywords": [
+        "case converter",
+        "title case converter",
+        "uppercase to lowercase",
+        "camelcase generator",
+        "snake case"
+      ],
+      "popular": true,
+      "relatedToolIds": [
+        "slug-generator",
+        "text-reverser",
+        "word-counter"
+      ]
+    },
+    {
+      "id": "remove-duplicate-lines",
+      "name": "Remove Duplicate Lines",
+      "slug": "remove-duplicate-lines",
+      "category": "text-tools",
+      "description": "Remove duplicate lines from lists or text documents with case-sensitive and whitespace trim options.",
+      "iconName": "CopyX",
+      "keywords": [
+        "remove duplicate lines",
+        "deduplicate list",
+        "unique lines filter",
+        "clean list"
+      ],
+      "relatedToolIds": [
+        "text-sorter",
+        "remove-extra-spaces"
+      ]
+    },
+    {
+      "id": "remove-extra-spaces",
+      "name": "Remove Extra Spaces",
+      "slug": "remove-extra-spaces",
+      "category": "text-tools",
+      "description": "Clean up text by removing consecutive spaces, trimming trailing whitespace, and collapsing extra blank lines.",
+      "iconName": "Eraser",
+      "keywords": [
+        "remove extra spaces",
+        "clean text",
+        "trim whitespace",
+        "collapse spaces"
+      ],
+      "relatedToolIds": [
+        "remove-duplicate-lines",
+        "case-converter"
+      ]
+    },
+    {
+      "id": "text-reverser",
+      "name": "Text Reverser",
+      "slug": "text-reverser",
+      "category": "text-tools",
+      "description": "Reverse text characters, reverse word order, reverse each word individually, or generate upside-down text.",
+      "iconName": "FlipHorizontal",
+      "keywords": [
+        "text reverser",
+        "reverse words",
+        "backwards text generator",
+        "mirror text"
+      ],
+      "relatedToolIds": [
+        "case-converter",
+        "text-sorter"
+      ]
+    },
+    {
+      "id": "text-sorter",
+      "name": "Text Sorter",
+      "slug": "text-sorter",
+      "category": "text-tools",
+      "description": "Sort lists alphabetically (A-Z, Z-A), numerically, by line length, or in random shuffled order.",
+      "iconName": "ArrowUpDown",
+      "keywords": [
+        "text sorter",
+        "alphabetize list",
+        "sort lines a-z",
+        "randomize list",
+        "list sorter"
+      ],
+      "relatedToolIds": [
+        "remove-duplicate-lines",
+        "random-decision-maker"
+      ]
+    },
+    {
+      "id": "slug-generator",
+      "name": "Slug Generator",
+      "slug": "slug-generator",
+      "category": "text-tools",
+      "description": "Convert article titles and strings into clean, SEO-friendly URL slugs with custom separators.",
+      "iconName": "Link",
+      "keywords": [
+        "slug generator",
+        "url slug creator",
+        "seo friendly url",
+        "string to slug"
+      ],
+      "relatedToolIds": [
+        "case-converter",
+        "meta-tag-generator",
+        "canonical-url-generator"
+      ]
+    },
+    {
+      "id": "lorem-ipsum-generator",
+      "name": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "category": "text-tools",
+      "description": "Generate placeholder dummy text by paragraphs, sentences, words, or unordered bullet lists.",
+      "iconName": "Pilcrow",
+      "keywords": [
+        "lorem ipsum generator",
+        "placeholder text",
+        "dummy text",
+        "lipsum generator"
+      ],
+      "popular": true,
+      "relatedToolIds": [
+        "word-counter",
+        "sentence-counter"
+      ]
+    },
+    {
+      "id": "json-formatter",
+      "name": "JSON Formatter & Validator",
+      "slug": "json-formatter",
+      "category": "developer-tools",
+      "description": "Prettify, format, minify, validate, and inspect JSON with collapsible hierarchy tree view and copy/download.",
+      "longDescription": "Fast, secure in-browser JSON Formatter and Validator. Formats raw JSON with 2-space or 4-space indentation, minifies for production, highlights syntax errors with exact line/column indicators, and processes everything locally.",
+      "iconName": "Braces",
+      "keywords": [
+        "json formatter",
+        "json validator",
+        "beautify json",
+        "minify json",
+        "json parser",
+        "json tree view"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Paste your raw JSON string or upload a .json file.",
+        "Click \"Format / Prettify\" (2 spaces / 4 spaces) or \"Minify\".",
+        "Review interactive tree view or formatted output.",
+        "Copy to clipboard or download as formatted .json."
+      ],
+      "relatedToolIds": [
+        "json-validator",
+        "base64-encoder",
+        "uuid-generator"
+      ]
+    },
+    {
+      "id": "json-validator",
+      "name": "JSON Validator",
+      "slug": "json-validator",
+      "category": "developer-tools",
+      "description": "Validate JSON syntax in real time with line and character error markers, and fix common trailing commas.",
+      "iconName": "CheckCircle2",
+      "keywords": [
+        "json validator",
+        "validate json",
+        "json syntax check",
+        "fix json errors"
+      ],
+      "relatedToolIds": [
+        "json-formatter",
+        "base64-decoder"
+      ]
+    },
+    {
+      "id": "base64-encoder",
+      "name": "Base64 Encoder",
+      "slug": "base64-encoder",
+      "category": "developer-tools",
+      "description": "Encode plain text, UTF-8 strings, and local binary files into standard Base64 representation.",
+      "iconName": "Binary",
+      "keywords": [
+        "base64 encoder",
+        "encode base64",
+        "string to base64",
+        "utf8 base64"
+      ],
+      "relatedToolIds": [
+        "base64-decoder",
+        "image-to-base64",
+        "url-encoder"
+      ]
+    },
+    {
+      "id": "base64-decoder",
+      "name": "Base64 Decoder",
+      "slug": "base64-decoder",
+      "category": "developer-tools",
+      "description": "Decode Base64 encoded strings back into clean UTF-8 text or preview decoded image assets.",
+      "iconName": "Code",
+      "keywords": [
+        "base64 decoder",
+        "decode base64",
+        "base64 to text",
+        "base64 converter"
+      ],
+      "relatedToolIds": [
+        "base64-encoder",
+        "base64-to-image",
+        "html-entity-decoder"
+      ]
+    },
+    {
+      "id": "url-encoder",
+      "name": "URL Encoder / Decoder",
+      "slug": "url-encoder",
+      "category": "developer-tools",
+      "description": "Encode and decode query strings and URLs using standard percent-encoding (encodeURIComponent & encodeURI).",
+      "iconName": "Link2",
+      "keywords": [
+        "url encoder",
+        "url decoder",
+        "percent encoding",
+        "uri component encoder",
+        "url escape"
+      ],
+      "relatedToolIds": [
+        "html-entity-encoder",
+        "slug-generator"
+      ]
+    },
+    {
+      "id": "html-entity-encoder",
+      "name": "HTML Entity Encoder / Decoder",
+      "slug": "html-entity-encoder",
+      "category": "developer-tools",
+      "description": "Convert special characters into HTML entities (e.g. & to &amp;, < to &lt;) and decode entities back to text.",
+      "iconName": "FileCode",
+      "keywords": [
+        "html entity encoder",
+        "html decode",
+        "escape html",
+        "html special chars"
+      ],
+      "relatedToolIds": [
+        "url-encoder",
+        "base64-encoder"
+      ]
+    },
+    {
+      "id": "uuid-generator",
+      "name": "UUID / GUID Generator",
+      "slug": "uuid-generator",
+      "category": "developer-tools",
+      "description": "Generate cryptographically secure Version 4 UUIDs (GUIDs) in bulk with uppercase, lowercase, and hyphens options.",
+      "iconName": "Key",
+      "keywords": [
+        "uuid generator",
+        "guid generator",
+        "uuid v4",
+        "bulk uuid generator",
+        "random uuid"
+      ],
+      "featured": true,
+      "popular": true,
+      "relatedToolIds": [
+        "hash-generator",
+        "password-generator",
+        "json-formatter"
+      ]
+    },
+    {
+      "id": "hash-generator",
+      "name": "Hash Generator",
+      "slug": "hash-generator",
+      "category": "developer-tools",
+      "description": "Generate cryptographic hashes using client-side Web Crypto API (SHA-256, SHA-512, SHA-384, SHA-1, MD5).",
+      "iconName": "ShieldCheck",
+      "keywords": [
+        "hash generator",
+        "sha256 generator",
+        "sha512 generator",
+        "md5 hash",
+        "crypto hash online"
+      ],
+      "relatedToolIds": [
+        "uuid-generator",
+        "password-generator",
+        "base64-encoder"
+      ]
+    },
+    {
+      "id": "meta-tag-generator",
+      "name": "Meta Tag Generator",
+      "slug": "meta-tag-generator",
+      "category": "seo-tools",
+      "description": "Generate comprehensive HTML meta tags including Title, Description, Robots, Canonical, and Open Graph.",
+      "iconName": "SearchCheck",
+      "keywords": [
+        "meta tag generator",
+        "seo meta tags",
+        "html meta generator",
+        "meta tags creator"
+      ],
+      "featured": true,
+      "popular": true,
+      "relatedToolIds": [
+        "meta-description-generator",
+        "open-graph-generator",
+        "serp-snippet-preview"
+      ]
+    },
+    {
+      "id": "meta-description-generator",
+      "name": "Meta Description Generator",
+      "slug": "meta-description-generator",
+      "category": "seo-tools",
+      "description": "Craft high-CTR meta descriptions with real-time character count (150-160 max) and pixel width meter.",
+      "iconName": "FileSearch",
+      "keywords": [
+        "meta description generator",
+        "meta description length",
+        "seo snippet description",
+        "meta tag tool"
+      ],
+      "relatedToolIds": [
+        "meta-tag-generator",
+        "serp-snippet-preview"
+      ]
+    },
+    {
+      "id": "robots-txt-generator",
+      "name": "Robots.txt Generator",
+      "slug": "robots-txt-generator",
+      "category": "seo-tools",
+      "description": "Create custom robots.txt files with crawl rules for Googlebot, Bingbot, sitemap references, and crawl delays.",
+      "iconName": "Bot",
+      "keywords": [
+        "robots txt generator",
+        "create robots txt",
+        "robots file creator",
+        "seo crawler rules"
+      ],
+      "relatedToolIds": [
+        "sitemap-generator",
+        "meta-tag-generator"
+      ]
+    },
+    {
+      "id": "sitemap-generator",
+      "name": "XML Sitemap Generator",
+      "slug": "sitemap-generator",
+      "category": "seo-tools",
+      "description": "Build Google-compliant XML sitemaps with page URLs, priority values, and change frequencies ready to download.",
+      "iconName": "Network",
+      "keywords": [
+        "xml sitemap generator",
+        "create sitemap xml",
+        "google sitemap creator",
+        "seo sitemap"
+      ],
+      "relatedToolIds": [
+        "robots-txt-generator",
+        "canonical-url-generator"
+      ]
+    },
+    {
+      "id": "open-graph-generator",
+      "name": "Open Graph Meta Tag Generator",
+      "slug": "open-graph-generator",
+      "category": "seo-tools",
+      "description": "Generate social meta tags for Facebook, LinkedIn, Twitter/X cards with real-time live preview mockups.",
+      "iconName": "Share2",
+      "keywords": [
+        "open graph generator",
+        "og meta tags",
+        "twitter card generator",
+        "social share preview"
+      ],
+      "popular": true,
+      "relatedToolIds": [
+        "meta-tag-generator",
+        "serp-snippet-preview"
+      ]
+    },
+    {
+      "id": "keyword-density-checker",
+      "name": "Keyword Density Checker",
+      "slug": "keyword-density-checker",
+      "category": "seo-tools",
+      "description": "Analyze keyword density percentages for 1-word, 2-word, and 3-word phrases to avoid keyword stuffing.",
+      "iconName": "BarChart2",
+      "keywords": [
+        "keyword density checker",
+        "keyword frequency analyzer",
+        "seo content optimization",
+        "keyword density tool"
+      ],
+      "relatedToolIds": [
+        "word-counter",
+        "meta-tag-generator"
+      ]
+    },
+    {
+      "id": "serp-snippet-preview",
+      "name": "SERP Snippet Preview Tool",
+      "slug": "serp-snippet-preview",
+      "category": "seo-tools",
+      "description": "Preview exactly how your page Title, URL, and Meta Description will look in Google Desktop & Mobile search results.",
+      "iconName": "Monitor",
+      "keywords": [
+        "serp snippet preview",
+        "google search preview",
+        "seo title preview",
+        "google snippet optimizer"
+      ],
+      "featured": true,
+      "relatedToolIds": [
+        "meta-tag-generator",
+        "meta-description-generator",
+        "open-graph-generator"
+      ]
+    },
+    {
+      "id": "canonical-url-generator",
+      "name": "Canonical URL Generator",
+      "slug": "canonical-url-generator",
+      "category": "seo-tools",
+      "description": "Generate clean rel=\"canonical\" tags to prevent duplicate content penalties across protocol and trailing slashes.",
+      "iconName": "Link",
+      "keywords": [
+        "canonical url generator",
+        "rel canonical tag",
+        "duplicate content seo",
+        "canonical link tag"
+      ],
+      "relatedToolIds": [
+        "slug-generator",
+        "meta-tag-generator"
+      ]
+    },
+    {
+      "id": "schema-markup-generator",
+      "name": "Schema Markup Generator (JSON-LD)",
+      "slug": "schema-markup-generator",
+      "category": "seo-tools",
+      "description": "Generate structured data JSON-LD for Articles, FAQs, Organizations, Local Businesses, and Products.",
+      "iconName": "Cpu",
+      "keywords": [
+        "schema markup generator",
+        "json ld generator",
+        "structured data tool",
+        "faq schema creator"
+      ],
+      "popular": true,
+      "relatedToolIds": [
+        "meta-tag-generator",
+        "sitemap-generator"
+      ]
+    },
+    {
+      "id": "password-generator",
+      "name": "Password Generator",
+      "slug": "password-generator",
+      "category": "generators",
+      "description": "Generate ultra-secure, cryptographically strong random passwords with custom symbols, numbers, and entropy rating.",
+      "longDescription": "Create unbreakable passwords using the browser’s native crypto.getRandomValues API. Customize length, uppercase/lowercase characters, numbers, custom symbols, exclude ambiguous characters (l, 1, O, 0), and measure password strength in real time.",
+      "iconName": "Shield",
+      "keywords": [
+        "password generator",
+        "random password generator",
+        "strong password",
+        "secure password creator",
+        "entropy checker"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Select password length (8 to 64 characters).",
+        "Toggle character groups: Uppercase (A-Z), Lowercase (a-z), Numbers (0-9), Symbols (!@#$%).",
+        "Click \"Generate Password\" or use the auto-refresh button.",
+        "Click \"Copy\" to safely store in your password manager."
+      ],
+      "relatedToolIds": [
+        "uuid-generator",
+        "hash-generator"
+      ]
+    },
+    {
+      "id": "random-number-generator",
+      "name": "Random Number Generator",
+      "slug": "random-number-generator",
+      "category": "generators",
+      "description": "Generate random numbers or bulk integers within any custom range (min, max) with duplicate controls.",
+      "iconName": "Dice5",
+      "keywords": [
+        "random number generator",
+        "rng",
+        "random integer",
+        "lottery number picker",
+        "dice roller"
+      ],
+      "relatedToolIds": [
+        "random-decision-maker",
+        "password-generator"
+      ]
+    },
+    {
+      "id": "random-name-generator",
+      "name": "Random Name Generator",
+      "slug": "random-name-generator",
+      "category": "generators",
+      "description": "Generate realistic first and last names across diverse cultural backgrounds and gender options.",
+      "iconName": "UserCheck",
+      "keywords": [
+        "random name generator",
+        "fake name generator",
+        "character name generator",
+        "random person name"
+      ],
+      "relatedToolIds": [
+        "username-generator",
+        "lorem-ipsum-generator"
+      ]
+    },
+    {
+      "id": "username-generator",
+      "name": "Username Generator",
+      "slug": "username-generator",
+      "category": "generators",
+      "description": "Create unique, stylish usernames for social media, YouTube, Discord, gaming tags, and professional accounts.",
+      "iconName": "AtSign",
+      "keywords": [
+        "username generator",
+        "gamer tag generator",
+        "social media handle creator",
+        "cool usernames"
+      ],
+      "relatedToolIds": [
+        "random-name-generator",
+        "password-generator"
+      ]
+    },
+    {
+      "id": "qr-code-generator",
+      "name": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "category": "generators",
+      "description": "Generate customizable, high-resolution QR codes for URLs, WiFi networks, text, contact cards, and email with PNG download.",
+      "longDescription": "Create instant QR codes entirely in your browser with custom styling (dark luxury, classic, gold accents), error correction levels (L, M, Q, H), and high-res PNG/SVG download support.",
+      "iconName": "QrCode",
+      "keywords": [
+        "qr code generator",
+        "free qr code maker",
+        "custom qr code",
+        "wifi qr code",
+        "download qr code"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Enter URL, plain text, WiFi credentials, or email.",
+        "Pick color themes (Classic Black, Deep Navy & Gold, Emerald, Sunset).",
+        "Select resolution / size (256px to 1024px).",
+        "Click \"Download QR Code PNG\"."
+      ],
+      "relatedToolIds": [
+        "url-encoder",
+        "slug-generator"
+      ]
+    },
+    {
+      "id": "color-palette-generator",
+      "name": "Color Palette Generator",
+      "slug": "color-palette-generator",
+      "category": "generators",
+      "description": "Generate harmonious 5-color aesthetic palettes (Monochromatic, Analogous, Complementary, Triadic) with HEX/RGB/Tailwind export.",
+      "iconName": "Palette",
+      "keywords": [
+        "color palette generator",
+        "color scheme creator",
+        "hex color picker",
+        "harmonious color palette",
+        "tailwind colors"
+      ],
+      "featured": true,
+      "popular": true,
+      "relatedToolIds": [
+        "gradient-generator",
+        "base64-encoder"
+      ]
+    },
+    {
+      "id": "gradient-generator",
+      "name": "CSS Gradient Generator",
+      "slug": "gradient-generator",
+      "category": "generators",
+      "description": "Build modern linear and radial CSS background gradients with interactive color stops and 1-click CSS export.",
+      "iconName": "Sparkles",
+      "keywords": [
+        "css gradient generator",
+        "linear gradient maker",
+        "radial gradient",
+        "web gradient generator"
+      ],
+      "relatedToolIds": [
+        "color-palette-generator",
+        "qr-code-generator"
+      ]
+    },
+    {
+      "id": "image-compressor",
+      "name": "Image Compressor",
+      "slug": "image-compressor",
+      "category": "image-tools",
+      "description": "Compress JPG, PNG, and WebP images locally in your browser with real-time file size savings comparison.",
+      "longDescription": "Reduce image file size by up to 80% without visible quality loss. Runs 100% client-side via HTML5 Canvas with zero server uploads for complete data privacy.",
+      "iconName": "Minimize",
+      "keywords": [
+        "image compressor",
+        "compress jpg",
+        "compress png",
+        "reduce image file size",
+        "online image compression"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Drag and drop an image file (JPG, PNG, WebP) or click to browse.",
+        "Adjust the Quality compression slider (1% to 100%).",
+        "Compare the Original vs Compressed file size and visual preview.",
+        "Download your optimized compressed image instantly."
+      ],
+      "relatedToolIds": [
+        "image-resizer",
+        "jpg-to-png",
+        "png-to-jpg"
+      ]
+    },
+    {
+      "id": "image-resizer",
+      "name": "Image Resizer",
+      "slug": "image-resizer",
+      "category": "image-tools",
+      "description": "Resize image dimensions by exact pixels (width/height) or percentage scaling with aspect ratio locking.",
+      "iconName": "Crop",
+      "keywords": [
+        "image resizer",
+        "resize picture",
+        "change image dimensions",
+        "scale photo online"
+      ],
+      "relatedToolIds": [
+        "image-compressor",
+        "image-cropper"
+      ]
+    },
+    {
+      "id": "image-cropper",
+      "name": "Image Cropper",
+      "slug": "image-cropper",
+      "category": "image-tools",
+      "description": "Crop images with preset aspect ratios (1:1 Square, 16:9 Landscape, 4:3, 9:16 Story) or freeform selection.",
+      "iconName": "Scissors",
+      "keywords": [
+        "image cropper",
+        "crop photo online",
+        "aspect ratio crop",
+        "square photo crop"
+      ],
+      "relatedToolIds": [
+        "image-resizer",
+        "image-compressor"
+      ]
+    },
+    {
+      "id": "jpg-to-png",
+      "name": "JPG to PNG Converter",
+      "slug": "jpg-to-png",
+      "category": "image-tools",
+      "description": "Convert JPG / JPEG photos into lossless PNG format directly in your browser with zero quality degradation.",
+      "iconName": "ImagePlus",
+      "keywords": [
+        "jpg to png",
+        "convert jpg to png",
+        "jpeg to png online",
+        "lossless png converter"
+      ],
+      "relatedToolIds": [
+        "png-to-jpg",
+        "image-format-converter"
+      ]
+    },
+    {
+      "id": "png-to-jpg",
+      "name": "PNG to JPG Converter",
+      "slug": "png-to-jpg",
+      "category": "image-tools",
+      "description": "Convert PNG images with transparent backgrounds to high-quality JPG with custom background fill color.",
+      "iconName": "Image",
+      "keywords": [
+        "png to jpg",
+        "convert png to jpg",
+        "png to jpeg online"
+      ],
+      "relatedToolIds": [
+        "jpg-to-png",
+        "image-compressor"
+      ]
+    },
+    {
+      "id": "image-format-converter",
+      "name": "Image Format Converter",
+      "slug": "image-format-converter",
+      "category": "image-tools",
+      "description": "Convert any image between WebP, PNG, JPG, and BMP formats with quality adjustments.",
+      "iconName": "Layers",
+      "keywords": [
+        "image format converter",
+        "webp to png",
+        "png to webp",
+        "convert photo format"
+      ],
+      "relatedToolIds": [
+        "image-compressor",
+        "jpg-to-png"
+      ]
+    },
+    {
+      "id": "image-to-base64",
+      "name": "Image to Base64 Converter",
+      "slug": "image-to-base64",
+      "category": "image-tools",
+      "description": "Convert image files into Base64 Data URIs ready to embed in HTML <img> tags or CSS background-image.",
+      "iconName": "Code2",
+      "keywords": [
+        "image to base64",
+        "base64 image converter",
+        "data uri image",
+        "embed image base64"
+      ],
+      "relatedToolIds": [
+        "base64-to-image",
+        "base64-encoder"
+      ]
+    },
+    {
+      "id": "base64-to-image",
+      "name": "Base64 to Image Decoder",
+      "slug": "base64-to-image",
+      "category": "image-tools",
+      "description": "Decode Base64 Data URI strings into downloadable image files (PNG, JPG, WebP) with instant visual preview.",
+      "iconName": "Eye",
+      "keywords": [
+        "base64 to image",
+        "decode base64 image",
+        "base64 string to picture"
+      ],
+      "relatedToolIds": [
+        "image-to-base64",
+        "base64-decoder"
+      ]
+    },
+    {
+      "id": "pomodoro-timer",
+      "name": "Pomodoro Focus Timer",
+      "slug": "pomodoro-timer",
+      "category": "productivity",
+      "description": "Boost focus and productivity with customizable Pomodoro intervals (25m Focus, 5m Short Break, 15m Long Break) and audio chimes.",
+      "longDescription": "Scientifically proven Pomodoro technique timer. Manage deep work cycles, track completed sessions, toggle audio alerts, and customize interval lengths.",
+      "iconName": "Timer",
+      "keywords": [
+        "pomodoro timer",
+        "focus timer",
+        "productivity timer",
+        "pomodoro technique",
+        "study timer"
+      ],
+      "featured": true,
+      "popular": true,
+      "howToSteps": [
+        "Select cycle: Focus (25m), Short Break (5m), or Long Break (15m).",
+        "Click \"Start\" to begin the countdown timer.",
+        "Receive a clean audio notification and visual alert when the interval completes."
+      ],
+      "relatedToolIds": [
+        "countdown-timer",
+        "stopwatch",
+        "daily-habit-tracker"
+      ]
+    },
+    {
+      "id": "countdown-timer",
+      "name": "Countdown Timer",
+      "slug": "countdown-timer",
+      "category": "productivity",
+      "description": "Set custom countdown timers with hours, minutes, seconds, audible alarm, pause/resume, and full-screen view.",
+      "iconName": "Hourglass",
+      "keywords": [
+        "countdown timer",
+        "online timer",
+        "set timer",
+        "kitchen timer",
+        "alarm timer"
+      ],
+      "relatedToolIds": [
+        "pomodoro-timer",
+        "stopwatch"
+      ]
+    },
+    {
+      "id": "stopwatch",
+      "name": "Online Stopwatch",
+      "slug": "stopwatch",
+      "category": "productivity",
+      "description": "Precision digital stopwatch with millisecond accuracy, lap tracking, split intervals, and lap table export.",
+      "iconName": "Watch",
+      "keywords": [
+        "stopwatch",
+        "online stopwatch",
+        "lap timer",
+        "precision timer",
+        "split timer"
+      ],
+      "relatedToolIds": [
+        "countdown-timer",
+        "pomodoro-timer",
+        "pace-calculator"
+      ]
+    },
+    {
+      "id": "daily-habit-tracker",
+      "name": "Daily Habit Tracker",
+      "slug": "daily-habit-tracker",
+      "category": "productivity",
+      "description": "Track daily habits, maintain consecutive streaks, and monitor visual progress rings stored in your browser.",
+      "iconName": "CheckSquare",
+      "keywords": [
+        "habit tracker",
+        "daily habits",
+        "streak tracker",
+        "habit builder",
+        "routine checklist"
+      ],
+      "popular": true,
+      "relatedToolIds": [
+        "todo-list",
+        "notes-tool",
+        "pomodoro-timer"
+      ]
+    },
+    {
+      "id": "random-decision-maker",
+      "name": "Random Decision Maker",
+      "slug": "random-decision-maker",
+      "category": "productivity",
+      "description": "Overcome decision fatigue with an animated choice picker wheel for lunch, choices, or giveaway winners.",
+      "iconName": "HelpCircle",
+      "keywords": [
+        "decision maker",
+        "wheel of names",
+        "random picker",
+        "choice spinner",
+        "random selector"
+      ],
+      "relatedToolIds": [
+        "random-number-generator",
+        "random-name-generator"
+      ]
+    },
+    {
+      "id": "todo-list",
+      "name": "To-Do List",
+      "slug": "todo-list",
+      "category": "productivity",
+      "description": "Minimalist task manager with priority flags, task categories, completion filters, and local persistence.",
+      "iconName": "ListChecks",
+      "keywords": [
+        "to do list",
+        "task manager",
+        "task checklist",
+        "daily planner",
+        "todo app online"
+      ],
+      "relatedToolIds": [
+        "daily-habit-tracker",
+        "notes-tool"
+      ]
+    },
+    {
+      "id": "notes-tool",
+      "name": "Notes Scratchpad",
+      "slug": "notes-tool",
+      "category": "productivity",
+      "description": "Distraction-free rich scratchpad with live word count, local auto-save, and instant Markdown / text export.",
+      "iconName": "StickyNote",
+      "keywords": [
+        "notes tool",
+        "scratchpad",
+        "notepad online",
+        "quick notes",
+        "auto save text editor"
+      ],
+      "relatedToolIds": [
+        "todo-list",
+        "word-counter"
+      ]
+    },
+    {
+      "id": "meeting-time-calculator",
+      "name": "Meeting Time Calculator",
+      "slug": "meeting-time-calculator",
+      "category": "date-time",
+      "description": "Find overlapping working hour slots across international team timezones (EST, PST, GMT, CET, IST, JST).",
+      "iconName": "Users",
+      "keywords": [
+        "meeting time calculator",
+        "world clock meeting planner",
+        "time zone overlap",
+        "remote team time finder"
+      ],
+      "relatedToolIds": [
+        "time-zone-converter",
+        "time-calculator"
+      ]
+    },
+    {
+      "id": "salary-calculator",
+      "name": "Salary & Hourly Wage Calculator",
+      "slug": "salary-calculator",
+      "category": "finance-tools",
+      "description": "Convert between hourly wage, daily, weekly, bi-weekly, monthly, and annual gross salary with working hour adjustments.",
+      "iconName": "DollarSign",
+      "keywords": [
+        "salary calculator",
+        "hourly to salary",
+        "annual income calculator",
+        "wage converter",
+        "paycheck calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "financial",
+      "howToSteps": [
+        "Enter compensation amount and select time basis (Hourly, Weekly, Monthly, Annual).",
+        "Adjust standard working hours per week (default 40 hrs) and paid weeks per year (default 52).",
+        "View comprehensive salary breakdown across hourly, daily, weekly, monthly, and annual figures."
+      ],
+      "relatedToolIds": [
+        "tax-calculator",
+        "loan-calculator",
+        "profit-margin-calculator"
+      ]
+    },
+    {
+      "id": "simple-interest-calculator",
+      "name": "Simple Interest Calculator",
+      "slug": "simple-interest-calculator",
+      "category": "finance-tools",
+      "description": "Calculate simple interest (I = P × r × t), total accrued amount, and interest earned over time.",
+      "iconName": "Percent",
+      "keywords": [
+        "simple interest calculator",
+        "interest formula",
+        "calculate interest",
+        "simple interest equation"
+      ],
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "compound-interest-calculator",
+        "loan-calculator"
+      ]
+    },
+    {
+      "id": "mortgage-calculator",
+      "name": "Mortgage Calculator",
+      "slug": "mortgage-calculator",
+      "category": "finance-tools",
+      "description": "Calculate monthly home mortgage payment with property tax, home insurance, PMI, and total loan cost.",
+      "iconName": "Home",
+      "keywords": [
+        "mortgage calculator",
+        "home loan calculator",
+        "monthly mortgage payment",
+        "property tax calculator",
+        "house payment"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "loan-calculator",
+        "compound-interest-calculator",
+        "roi-calculator"
+      ]
+    },
+    {
+      "id": "investment-calculator",
+      "name": "Investment Return Calculator",
+      "slug": "investment-calculator",
+      "category": "finance-tools",
+      "description": "Project future investment portfolio returns, annual contributions, and compound stock market growth over 10 to 40 years.",
+      "iconName": "LineChart",
+      "keywords": [
+        "investment calculator",
+        "stock return calculator",
+        "portfolio growth",
+        "future value investments",
+        "401k calculator"
+      ],
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "compound-interest-calculator",
+        "roi-calculator",
+        "salary-calculator"
+      ]
+    },
+    {
+      "id": "profit-margin-calculator",
+      "name": "Profit Margin & Markup Calculator",
+      "slug": "profit-margin-calculator",
+      "category": "finance-tools",
+      "description": "Calculate gross profit margin percentage, markup percentage, cost of goods, and total net profit.",
+      "iconName": "Briefcase",
+      "keywords": [
+        "profit margin calculator",
+        "gross margin",
+        "markup calculator",
+        "cost and sell price",
+        "profit percentage"
+      ],
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "discount-calculator",
+        "roi-calculator",
+        "gst-calculator"
+      ]
+    },
+    {
+      "id": "roi-calculator",
+      "name": "ROI (Return on Investment) Calculator",
+      "slug": "roi-calculator",
+      "category": "finance-tools",
+      "description": "Calculate total percentage Return on Investment (ROI) and annualized ROI for business ventures or assets.",
+      "iconName": "TrendingUp",
+      "keywords": [
+        "roi calculator",
+        "return on investment",
+        "annualized roi",
+        "investment performance"
+      ],
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "profit-margin-calculator",
+        "investment-calculator"
+      ]
+    },
+    {
+      "id": "tax-calculator",
+      "name": "Income Tax Estimator",
+      "slug": "tax-calculator",
+      "category": "finance-tools",
+      "description": "Estimate progressive income tax brackets, effective tax rate, and take-home net income.",
+      "iconName": "FileText",
+      "keywords": [
+        "tax calculator",
+        "income tax estimate",
+        "effective tax rate",
+        "after tax salary"
+      ],
+      "disclaimerType": "financial",
+      "relatedToolIds": [
+        "salary-calculator",
+        "gst-calculator"
+      ]
+    },
+    {
+      "id": "bmr-calculator",
+      "name": "BMR Calculator (Basal Metabolic Rate)",
+      "slug": "bmr-calculator",
+      "category": "health",
+      "description": "Calculate Basal Metabolic Rate (BMR) using Mifflin-St Jeor & Harris-Benedict formulas to find calories burned at rest.",
+      "iconName": "Activity",
+      "keywords": [
+        "bmr calculator",
+        "basal metabolic rate",
+        "calories burned at rest",
+        "mifflin st jeor formula"
+      ],
+      "disclaimerType": "health",
+      "relatedToolIds": [
+        "tdee-calculator",
+        "calorie-calculator",
+        "bmi-calculator"
+      ]
+    },
+    {
+      "id": "tdee-calculator",
+      "name": "TDEE Calculator (Total Daily Energy Expenditure)",
+      "slug": "tdee-calculator",
+      "category": "health",
+      "description": "Calculate Total Daily Energy Expenditure (TDEE) based on activity level and get personalized calorie deficit/surplus goals.",
+      "iconName": "Flame",
+      "keywords": [
+        "tdee calculator",
+        "total daily energy expenditure",
+        "maintenance calories",
+        "calorie deficit calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "disclaimerType": "health",
+      "relatedToolIds": [
+        "calorie-calculator",
+        "bmr-calculator",
+        "body-fat-calculator"
+      ]
+    },
+    {
+      "id": "calorie-calculator",
+      "name": "Calorie Target & Macro Calculator",
+      "slug": "calorie-calculator",
+      "category": "health",
+      "description": "Determine exact daily calorie targets for weight loss, maintenance, or muscle gain with balanced macronutrient breakdowns.",
+      "iconName": "Apple",
+      "keywords": [
+        "calorie calculator",
+        "macro calculator",
+        "weight loss calories",
+        "daily calorie needs",
+        "protein carbs fat macros"
+      ],
+      "disclaimerType": "health",
+      "relatedToolIds": [
+        "tdee-calculator",
+        "ideal-weight-calculator",
+        "water-intake-calculator"
+      ]
+    },
+    {
+      "id": "ideal-weight-calculator",
+      "name": "Ideal Body Weight Calculator",
+      "slug": "ideal-weight-calculator",
+      "category": "health",
+      "description": "Compare ideal body weight estimates across medical formulas: Devine, Robinson, Miller, and Hamwi equations.",
+      "iconName": "Scale",
+      "keywords": [
+        "ideal weight calculator",
+        "healthy weight by height",
+        "devine formula",
+        "target weight"
+      ],
+      "disclaimerType": "health",
+      "relatedToolIds": [
+        "bmi-calculator",
+        "body-fat-calculator"
+      ]
+    },
+    {
+      "id": "body-fat-calculator",
+      "name": "Body Fat Percentage Calculator",
+      "slug": "body-fat-calculator",
+      "category": "health",
+      "description": "Estimate body fat percentage using the U.S. Navy circumference method with neck, waist, and hip measurements.",
+      "iconName": "Target",
+      "keywords": [
+        "body fat calculator",
+        "navy body fat formula",
+        "body fat percentage",
+        "lean mass calculator"
+      ],
+      "disclaimerType": "health",
+      "relatedToolIds": [
+        "bmi-calculator",
+        "tdee-calculator"
+      ]
+    },
+    {
+      "id": "water-intake-calculator",
+      "name": "Daily Water Intake Calculator",
+      "slug": "water-intake-calculator",
+      "category": "health",
+      "description": "Calculate recommended daily water hydration in liters and ounces based on body weight, exercise, and climate.",
+      "iconName": "Droplet",
+      "keywords": [
+        "water intake calculator",
+        "daily water needs",
+        "how much water to drink",
+        "hydration calculator"
+      ],
+      "disclaimerType": "health",
+      "relatedToolIds": [
+        "calorie-calculator",
+        "pace-calculator"
+      ]
+    },
+    {
+      "id": "pace-calculator",
+      "name": "Running & Cycling Pace Calculator",
+      "slug": "pace-calculator",
+      "category": "health",
+      "description": "Calculate running pace per km/mile, split times, and target race finishes for 5K, 10K, Half Marathon, and Full Marathon.",
+      "iconName": "Footprints",
+      "keywords": [
+        "pace calculator",
+        "running pace",
+        "5k pace",
+        "marathon finish time calculator",
+        "pace per km to per mile"
+      ],
+      "relatedToolIds": [
+        "speed-converter",
+        "stopwatch",
+        "water-intake-calculator"
+      ]
+    },
+    {
+      "id": "file-size-converter",
+      "name": "File Size Converter",
+      "slug": "file-size-converter",
+      "category": "file-tools",
+      "description": "Convert file sizes between Bytes, KB, MB, GB, and TB in decimal (1000) and binary (1024) formats.",
+      "iconName": "File",
+      "keywords": [
+        "file size converter",
+        "bytes to mb",
+        "mb to gb",
+        "file size calculator"
+      ],
+      "relatedToolIds": [
+        "data-storage-converter",
+        "unit-converter"
+      ]
+    },
+    {
+      "id": "csv-json-converter",
+      "name": "CSV to JSON & JSON to CSV",
+      "slug": "csv-json-converter",
+      "category": "file-tools",
+      "description": "Convert tabular CSV data into clean JSON arrays, or parse JSON into downloadable CSV spreadsheets.",
+      "iconName": "Table",
+      "keywords": [
+        "csv to json",
+        "json to csv",
+        "convert spreadsheet to json",
+        "csv parser online"
+      ],
+      "relatedToolIds": [
+        "json-formatter",
+        "remove-duplicate-lines"
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "id": "how-to-calculate-your-age-online",
+      "slug": "how-to-calculate-your-age-online",
+      "title": "How to Calculate Your Exact Age Online (Years, Months, Days & Next Birthday)",
+      "excerpt": "Learn the exact mathematics behind calculating chronological age, how leap years affect date math, and why client-side calculators provide instant precision.",
+      "category": "Calculators",
+      "author": {
+        "name": "Dr. Evelyn Vance",
+        "role": "Senior Computational Mathematician",
+        "avatar": "EV"
+      },
+      "publishedDate": "August 12, 2026",
+      "readTime": "5 min read",
+      "tags": [
+        "Age Calculation",
+        "Calendar Math",
+        "Date Difference",
+        "Life Milestones"
+      ],
+      "relatedToolSlugs": [
+        "age-calculator",
+        "date-calculator",
+        "time-calculator"
+      ],
+      "content": "Calculating chronological age seems straightforward on paper, but factoring in leap years, month-length variations (28, 29, 30, and 31 days), and precise time zones introduces surprising complexity into digital computation.\n\n## The Mathematical Breakdown of Chronological Age\n\nTo compute chronological age without discrepancy:\n1. **Year Delta**: Subtract the birth year from the current year ($Y_2 - Y_1$).\n2. **Month Adjustment**: If the current month is earlier than the birth month, decrement the year count by 1 and add 12 to the month difference.\n3. **Day Adjustment**: If the current day is less than the birth day, borrow days from the preceding calendar month.\n\n### Why Leap Years Matter\nEvery four years (with exceptions for century years not divisible by 400), a leap day (February 29) is added. A person born on February 29 legally celebrates their birthday on March 1 in non-leap years under most standard jurisdictions.\n\n## Next Birthday Countdown\n\nOur online **Age Calculator** also computes the exact duration until your upcoming birthday, showing remaining calendar months, days, hours, and even the day of the week your birthday will land on next.\n\n## Practical Everyday Use Cases\n- **Official Documentation**: Visa, passport, insurance, and retirement eligibility dates.\n- **Milestone Tracking**: Counting total days, hours, or minutes lived.\n- **School & Sports Enrollment**: Verifying strict age cutoffs.",
+      "faqs": [
+        {
+          "question": "How do leap years affect my total days lived?",
+          "answer": "Each leap year lived adds an extra calendar day (366 days instead of 365) to your total accumulated days counter."
+        },
+        {
+          "question": "What is the most accurate way to calculate age online?",
+          "answer": "Use an online client-side calculator that computes calendar year-month-day intervals rather than dividing total days by 365.25."
+        }
+      ]
+    },
+    {
+      "id": "how-to-calculate-bmi-correctly",
+      "slug": "how-to-calculate-bmi-correctly",
+      "title": "How to Calculate BMI Correctly: Metric vs Imperial Formulas & Healthy Ranges",
+      "excerpt": "Understand Body Mass Index (BMI), the World Health Organization categories, its practical uses, and when to combine it with body fat percentage.",
+      "category": "Health & Fitness",
+      "author": {
+        "name": "Marcus Sterling",
+        "role": "Certified Clinical Nutritionist",
+        "avatar": "MS"
+      },
+      "publishedDate": "August 10, 2026",
+      "readTime": "6 min read",
+      "tags": [
+        "BMI",
+        "Health & Fitness",
+        "Body Composition",
+        "Nutrition"
+      ],
+      "relatedToolSlugs": [
+        "bmi-calculator",
+        "bmr-calculator",
+        "ideal-weight-calculator",
+        "tdee-calculator"
+      ],
+      "content": "Body Mass Index (BMI) remains one of the most widely utilized screening metrics adopted by healthcare professionals and the World Health Organization (WHO).\n\n## The BMI Formulas\n\n### 1. Metric Formula\n$$\\text{BMI} = \\frac{\\text{Weight (kg)}}{[\\text{Height (m)}]^2}$$\n\n*Example*: For someone weighing 70 kg with a height of 1.75 m:\n$$\\text{BMI} = \\frac{70}{1.75^2} = \\frac{70}{3.0625} = 22.86$$\n\n### 2. Imperial Formula\n$$\\text{BMI} = \\frac{703 \\times \\text{Weight (lbs)}}{[\\text{Height (inches)}]^2}$$\n\n## Official WHO BMI Classifications\n\n| Classification | BMI Range ($kg/m^2$) | Risk of Comorbidities |\n| :--- | :--- | :--- |\n| **Underweight** | < 18.5 | Low weight risk |\n| **Normal Weight** | 18.5 – 24.9 | Average / Optimal |\n| **Overweight** | 25.0 – 29.9 | Increased |\n| **Obesity Class I** | 30.0 – 34.9 | Moderate |\n| **Obesity Class II** | 35.0 – 39.9 | Severe |\n| **Obesity Class III** | ≥ 40.0 | Very Severe |\n\n## When Should You Use Additional Metrics?\nWhile BMI is an excellent general screening tool, it does not distinguish between lean skeletal muscle mass and adipose tissue. If you engage in resistance training, pairing BMI with our **Body Fat Percentage Calculator** and **TDEE Calculator** provides a holistic view of body composition.",
+      "faqs": [
+        {
+          "question": "What is considered a healthy BMI for adults?",
+          "answer": "A BMI between 18.5 and 24.9 is considered the healthy/normal weight range for adult men and women."
+        },
+        {
+          "question": "Can athletes have an overweight BMI while being healthy?",
+          "answer": "Yes. Dense muscle tissue weighs more than fat volume, which can yield a higher BMI score despite low body fat."
+        }
+      ]
+    },
+    {
+      "id": "what-is-compound-interest",
+      "slug": "what-is-compound-interest",
+      "title": "What Is Compound Interest? How Exponential Growth Multiplies Wealth",
+      "excerpt": "Albert Einstein famously called compound interest the eighth wonder of the world. Explore the mathematics, compounding frequencies, and formula breakdown.",
+      "category": "Finance",
+      "author": {
+        "name": "Julian Montgomery",
+        "role": "Chartered Financial Analyst",
+        "avatar": "JM"
+      },
+      "publishedDate": "August 06, 2026",
+      "readTime": "7 min read",
+      "tags": [
+        "Compound Interest",
+        "Investing",
+        "Wealth Building",
+        "Financial Literacy"
+      ],
+      "relatedToolSlugs": [
+        "compound-interest-calculator",
+        "investment-calculator",
+        "simple-interest-calculator"
+      ],
+      "content": "Simple interest pays returns solely on the initial principal. In contrast, **compound interest** earns returns on both the starting principal AND all previously accumulated interest.\n\n## The Standard Compound Interest Equation\n\n$$A = P \\left(1 + \\frac{r}{n}\\right)^{nt}$$\n\nWhere:\n- **$A$** = Final accumulated amount (Principal + Interest)\n- **$P$** = Initial principal balance\n- **$r$** = Annual nominal interest rate (in decimal format, e.g., 0.08 for 8%)\n- **$n$** = Number of times interest compounds per year (12 for monthly, 365 for daily)\n- **$t$** = Number of years the funds are invested\n\n## The Rule of 72\nWant a fast mental estimate of how long it takes an investment to double? Divide 72 by your annual interest rate:\n$$\\text{Years to Double} \\approx \\frac{72}{\\text{Interest Rate}}$$\n*At 8% annual return: $72 / 8 = 9$ years to double.*\n\n## Why Starting Early Matters\nAn investor saving $300/month starting at age 25 with an 8% annual return accumulates over $900,000 by age 65, having contributed only $144,000 out-of-pocket. The remaining $750,000+ is pure compound growth!\n\nTest your unique financial projections using our free **Compound Interest Calculator**.",
+      "faqs": [
+        {
+          "question": "How does compounding frequency impact returns?",
+          "answer": "More frequent compounding (e.g. daily vs annually) yields slightly higher effective returns due to interest being reinvested sooner."
+        }
+      ]
+    },
+    {
+      "id": "how-to-calculate-percentage-increase",
+      "slug": "how-to-calculate-percentage-increase",
+      "title": "How to Calculate Percentage Increase and Decrease (Formulas & Real Examples)",
+      "excerpt": "Master percentage change, profit margins, discounts, and markup conversions with step-by-step arithmetic examples.",
+      "category": "Calculators",
+      "author": {
+        "name": "Dr. Evelyn Vance",
+        "role": "Senior Computational Mathematician",
+        "avatar": "EV"
+      },
+      "publishedDate": "August 04, 2026",
+      "readTime": "4 min read",
+      "tags": [
+        "Percentages",
+        "Math Formulas",
+        "Business Math"
+      ],
+      "relatedToolSlugs": [
+        "percentage-calculator",
+        "discount-calculator",
+        "profit-margin-calculator"
+      ],
+      "content": "Percentage changes are ubiquitous across finance, commerce, web analytics, and everyday grocery shopping.\n\n## The Percentage Change Formula\n\n$$\\text{Percentage Change} = \\left( \\frac{\\text{New Value} - \\text{Old Value}}{|\\text{Old Value}|} \\right) \\times 100$$\n\n- A **positive result** represents a **percentage increase**.\n- A **negative result** represents a **percentage decrease**.\n\n### Real-World Example\nSuppose a product's price increases from $80 to $100:\n1. Difference: $100 - 80 = 20$\n2. Divide by original: $20 / 80 = 0.25$\n3. Multiply by 100: $0.25 \\times 100 = 25\\%$ increase.\n\nUse our **Percentage Calculator** to solve all percentage scenarios in seconds.",
+      "faqs": [
+        {
+          "question": "What is the easiest way to calculate 15% in your head?",
+          "answer": "Find 10% by moving the decimal one spot to the left, then take half of that (5%) and add them together."
+        }
+      ]
+    },
+    {
+      "id": "how-to-convert-celsius-to-fahrenheit",
+      "slug": "how-to-convert-celsius-to-fahrenheit",
+      "title": "How to Convert Celsius to Fahrenheit and Kelvin (Quick Formulas & Cheat Sheet)",
+      "excerpt": "Clear conversions between temperature scales: Celsius, Fahrenheit, and absolute Kelvin, plus mental shortcuts for travelers.",
+      "category": "Converters",
+      "author": {
+        "name": "Marcus Sterling",
+        "role": "Senior Technical Writer",
+        "avatar": "MS"
+      },
+      "publishedDate": "August 01, 2026",
+      "readTime": "4 min read",
+      "tags": [
+        "Temperature",
+        "Conversions",
+        "Metric System"
+      ],
+      "relatedToolSlugs": [
+        "temperature-converter",
+        "unit-converter"
+      ],
+      "content": "Converting between Celsius (°C) and Fahrenheit (°F) is essential for cooking, weather forecasting, and international travel.\n\n## Standard Temperature Formulas\n\n- **Celsius to Fahrenheit**: $F = (C \\times 9/5) + 32$ or $F = (C \\times 1.8) + 32$\n- **Fahrenheit to Celsius**: $C = (F - 32) \\times 5/9$\n- **Celsius to Kelvin**: $K = C + 273.15$\n\n## Quick Mental Approximation for Travelers\nTo estimate °F from °C quickly: **Double the °C and add 30**.\n*Example: 20°C $\\rightarrow$ (20 × 2) + 30 = 70°F (Exact is 68°F).*",
+      "faqs": [
+        {
+          "question": "At what temperature are Celsius and Fahrenheit equal?",
+          "answer": "Celsius and Fahrenheit intersect at exactly -40° (-40°C = -40°F)."
+        }
+      ]
+    },
+    {
+      "id": "how-to-calculate-loan-payments",
+      "slug": "how-to-calculate-loan-payments",
+      "title": "How to Calculate Monthly Loan Payments (EMI Formula & Amortization Explained)",
+      "excerpt": "Understand how banks calculate monthly loan installments, principal reduction, and total interest charges across terms.",
+      "category": "Finance",
+      "author": {
+        "name": "Julian Montgomery",
+        "role": "Chartered Financial Analyst",
+        "avatar": "JM"
+      },
+      "publishedDate": "July 28, 2026",
+      "readTime": "6 min read",
+      "tags": [
+        "Loan Payments",
+        "EMI",
+        "Mortgage",
+        "Interest Rate"
+      ],
+      "relatedToolSlugs": [
+        "loan-calculator",
+        "mortgage-calculator",
+        "salary-calculator"
+      ],
+      "content": "When you borrow money through an amortizing loan, each monthly payment is split between principal reduction and lender interest.\n\n## The Standard Amortization Formula\n\n$$M = P \\frac{i(1 + i)^n}{(1 + i)^n - 1}$$\n\n- $M$ = Monthly payment\n- $P$ = Loan principal\n- $i$ = Monthly interest rate (Annual APR / 12 / 100)\n- $n$ = Total number of monthly installments\n\nUse our interactive **Loan Calculator** to see instant payment comparisons and full amortization previews.",
+      "faqs": [
+        {
+          "question": "How do interest rates affect monthly payments?",
+          "answer": "Higher interest rates increase both your monthly payment and the total lifetime interest paid."
+        }
+      ]
+    },
+    {
+      "id": "what-is-a-good-bmi",
+      "slug": "what-is-a-good-bmi",
+      "title": "What Is a Good BMI? Healthy Ranges by Age and Body Type",
+      "excerpt": "Detailed clinical insights into what constitutes an optimal Body Mass Index, health implications, and age-related adjustments.",
+      "category": "Health & Fitness",
+      "author": {
+        "name": "Dr. Evelyn Vance",
+        "role": "Clinical Researcher",
+        "avatar": "EV"
+      },
+      "publishedDate": "July 25, 2026",
+      "readTime": "5 min read",
+      "tags": [
+        "BMI",
+        "Healthy Living",
+        "Weight Management"
+      ],
+      "relatedToolSlugs": [
+        "bmi-calculator",
+        "ideal-weight-calculator",
+        "body-fat-calculator"
+      ],
+      "content": "Discover what clinical research reveals about optimal BMI ranges, metabolic health markers, and how lifestyle factors influence healthy weight benchmarks.",
+      "faqs": [
+        {
+          "question": "Does healthy BMI change as you age?",
+          "answer": "Research suggests older adults (over 65) often benefit from a slightly higher BMI range (22-27) for greater metabolic resilience."
+        }
+      ]
+    },
+    {
+      "id": "how-to-calculate-reading-time",
+      "slug": "how-to-calculate-reading-time",
+      "title": "How to Calculate Reading Time for Articles, Books, and Speeches",
+      "excerpt": "Explore standard words-per-minute (WPM) benchmarks for silent reading, speech delivery, and content comprehension.",
+      "category": "Text Tools",
+      "author": {
+        "name": "Marcus Sterling",
+        "role": "Content Strategist",
+        "avatar": "MS"
+      },
+      "publishedDate": "July 20, 2026",
+      "readTime": "4 min read",
+      "tags": [
+        "Reading Speed",
+        "Content Writing",
+        "Text Analysis"
+      ],
+      "relatedToolSlugs": [
+        "word-counter",
+        "character-counter"
+      ],
+      "content": "Average adult reading speed is approximately 200 to 250 words per minute (WPM). For spoken presentations or podcasts, the average speech rate is 130 to 150 WPM.\n\nTest your article or transcript reading time instantly using our free **Word Counter**.",
+      "faqs": [
+        {
+          "question": "What is the industry standard reading speed for blog posts?",
+          "answer": "Most platforms (like Medium and Substack) use 200–225 WPM to compute estimated reading times."
+        }
+      ]
+    },
+    {
+      "id": "how-to-compress-images-without-losing-quality",
+      "slug": "how-to-compress-images-without-losing-quality",
+      "title": "How to Compress Images Without Losing Quality: Client-Side Web Optimization",
+      "excerpt": "Reduce website load times and save bandwidth using smart lossy/lossless canvas compression and modern WebP conversions.",
+      "category": "Image Tools",
+      "author": {
+        "name": "Julian Montgomery",
+        "role": "Frontend Architect",
+        "avatar": "JM"
+      },
+      "publishedDate": "July 18, 2026",
+      "readTime": "5 min read",
+      "tags": [
+        "Image Compression",
+        "Web Performance",
+        "Canvas API",
+        "SEO"
+      ],
+      "relatedToolSlugs": [
+        "image-compressor",
+        "image-resizer",
+        "jpg-to-png",
+        "image-format-converter"
+      ],
+      "content": "Unoptimized images are the number one cause of slow webpage loading speeds. By compressing images locally in your browser before uploading, you preserve user privacy and reduce file sizes by 60%–80% without noticeable visual artifacting.\n\nTry our browser-based **Image Compressor** today.",
+      "faqs": [
+        {
+          "question": "Are my images uploaded to any server during compression?",
+          "answer": "No! ToolVerse compresses images 100% locally on your computer or phone using the browser HTML5 Canvas API."
+        }
+      ]
+    },
+    {
+      "id": "how-to-create-a-strong-password",
+      "slug": "how-to-create-a-strong-password",
+      "title": "How to Create a Strong Password: Entropy, Length, and Best Practices for 2026",
+      "excerpt": "Discover why password length beats complexity, how entropy prevents brute-force cracking, and how to store credentials safely.",
+      "category": "Security & Generators",
+      "author": {
+        "name": "Dr. Evelyn Vance",
+        "role": "Cybersecurity Analyst",
+        "avatar": "EV"
+      },
+      "publishedDate": "July 15, 2026",
+      "readTime": "6 min read",
+      "tags": [
+        "Cybersecurity",
+        "Password Security",
+        "Entropy",
+        "Privacy"
+      ],
+      "relatedToolSlugs": [
+        "password-generator",
+        "uuid-generator",
+        "hash-generator"
+      ],
+      "content": "A 16-character randomized password containing uppercase, lowercase, numbers, and symbols possesses over 90 bits of cryptographic entropy, requiring billions of years to brute-force with modern computing hardware.\n\nGenerate secure credentials with our client-side **Password Generator**.",
+      "faqs": [
+        {
+          "question": "How long should a strong password be in 2026?",
+          "answer": "At least 14 to 16 characters for critical accounts, generated with high entropy."
+        }
+      ]
+    },
+    {
+      "id": "what-is-a-qr-code",
+      "slug": "what-is-a-qr-code",
+      "title": "What Is a QR Code? How Quick Response Barcodes Work & How to Make One",
+      "excerpt": "Learn the technology behind 2D QR matrix barcodes, error correction levels (Reed-Solomon), and versatile applications.",
+      "category": "Generators",
+      "author": {
+        "name": "Marcus Sterling",
+        "role": "Senior Technical Writer",
+        "avatar": "MS"
+      },
+      "publishedDate": "July 10, 2026",
+      "readTime": "5 min read",
+      "tags": [
+        "QR Codes",
+        "Barcodes",
+        "Digital Marketing",
+        "Mobile Tech"
+      ],
+      "relatedToolSlugs": [
+        "qr-code-generator",
+        "url-encoder"
+      ],
+      "content": "Invented by Denso Wave in 1994, Quick Response (QR) codes store up to 7,089 numeric characters or 4,296 alphanumeric characters in a high-density 2D matrix.\n\nCreate custom styled codes with our free **QR Code Generator**.",
+      "faqs": [
+        {
+          "question": "What is QR code error correction?",
+          "answer": "Using Reed-Solomon algorithms, QR codes can remain scannable even if up to 30% of the surface is smudged or covered."
+        }
+      ]
+    },
+    {
+      "id": "how-to-calculate-profit-margin",
+      "slug": "how-to-calculate-profit-margin",
+      "title": "How to Calculate Profit Margin and Markup: Differences, Formulas & Excel Tips",
+      "excerpt": "Stop confusing margin and markup! Master gross margin, net margin, and operating profit arithmetic for e-commerce and retail.",
+      "category": "Finance",
+      "author": {
+        "name": "Julian Montgomery",
+        "role": "Chartered Financial Analyst",
+        "avatar": "JM"
+      },
+      "publishedDate": "July 05, 2026",
+      "readTime": "5 min read",
+      "tags": [
+        "Profit Margin",
+        "Markup",
+        "E-commerce",
+        "Business Math"
+      ],
+      "relatedToolSlugs": [
+        "profit-margin-calculator",
+        "discount-calculator",
+        "roi-calculator",
+        "gst-calculator"
+      ],
+      "content": "Understanding the mathematical distinction between **Profit Margin** and **Markup** is essential for profitable retail and freelance pricing.\n\n## The Formulas\n\n- **Gross Profit Margin (%)** = $\\frac{\\text{Revenue} - \\text{Cost}}{\\text{Revenue}} \\times 100$\n- **Markup Percentage (%)** = $\\frac{\\text{Revenue} - \\text{Cost}}{\\text{Cost}} \\times 100$\n\nCalculate both simultaneously with our **Profit Margin Calculator**.",
+      "faqs": [
+        {
+          "question": "Can profit margin exceed 100%?",
+          "answer": "No. Gross margin is always a fraction of total revenue (maximum 100%). However, markup can exceed 100%, 200%, or more."
+        }
+      ]
+    }
+  ]
+}
