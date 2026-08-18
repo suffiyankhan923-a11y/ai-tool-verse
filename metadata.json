@@ -1,0 +1,6 @@
+{
+  "name": "ToolVerse",
+  "description": "Free online tools platform for calculators, converters, text processing, image editing, developer utilities, and productivity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
